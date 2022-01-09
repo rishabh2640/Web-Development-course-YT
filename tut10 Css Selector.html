@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+        /* this is Element selector  */
+        p {
+            color: rgb(255, 255, 200);
+            background-color: rgb(113, 113, 250);
+            border: 2px solid orange;
+        }
+
+        /* this is id selector  */
+        #paraElement {
+            color: rgb(0, 0, 0);
+            background-color: rgb(0, 255, 94);
+        }
+
+        /* this is Class selector */
+        .redElement {
+            color: rgb(255, 255, 255);
+        }
+
+        .bgG {
+            background-color: rgb(0, 0, 0);
+        }
+        /* this is Grouping selector */
+        footer, span{
+            color: white;
+            background-color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h3>CSS Selectors</h3>
+    <p>Here we will learn about css selectors.</p>
+    <p id="paraElement">Thsi is our first line.</p>
+    <p>This is our second line.</p>
+    <div>
+        <p class="redElement bgG">This is our another line.</p>
+        <span>This is span.</span>
+    </div>
+    <footer>
+        This is footer.
+    </footer>
+</body>
+
+</html>

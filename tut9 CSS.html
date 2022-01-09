@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS tutorial</title>
+
+    <style>
+        p {
+            color: yellow;
+            background-color: seagreen !important;
+            /* put in !important to give the element a priority  */
+        }
+    </style>
+    <!-- this is internal CSS but html gives more priority to inline CSS that's why internal CSS won't work until inline CSS is not there -->
+
+    <link rel="stylesheet" href="tut9 CSS.css">
+    <!-- This is External CSS  -->
+    <!-- Using <style> tag in <head> tag is same as puttin <link> tag in it as external css. Whatever we put in <style> tag, same we write on Css sheet   -->
+
+    <!-- Last program will executed hence it shows last result of color due to overight property, but if you want to priortise some other element like color then you can put "!important" after it  -->
+</head>
+
+<body>
+    <h3>This is CSS tutorial</h3>
+    <!-- <p style="color: white; background-color: violet;">There we will go to learn all about Cascading Style Sheets.</p> -->
+    <p>There we will go to learn all about Cascading Style Sheets.</p>
+    <!-- this is inline CSS  -->
+
+
+</body>
+
+</html>
