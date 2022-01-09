@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <!-- Form and Labeling  -->
+
+    <h2>This is your HTML Forms tutorial</h2>
+
+    <form action="backend.php">
+        <!-- used to file a form and submit it to backend file  -->
+        <div>
+            <!-- it is an block element work same as <br> -->
+            Name : <input type="text" name="myName">
+            <!-- it is an input tag with different attributes - text, submit  -->
+        </div>
+        <br>
+        <div>
+            Role : <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            Email : <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date : <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus : <input type="number" name="myBonus">
+        </div>
+        <br>
+        <div>
+            Are you 18+ ? :
+            <input type="checkbox" name="myAge" checked>
+            <br>
+            Do you having a Job :
+            <input type="checkbox" name="myJobinfo">
+        </div>
+        <br>
+        <div>
+            Gender :
+            Male <input type="radio" name="myGender">
+            Female <input type="radio" name="myGender">
+            Other <input type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            Write your Thoughts : <br>
+            <textarea name="myText" cols="90" rows="5"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+
+    <h2>This HTML Form is with label</h2>
+    <form action="realpart.php">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="role">Role</label>
+            <input type="text" name="myRole" id="role">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="myEmail" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="myDate" id="date">
+        </div>
+        <br>
+        <div>
+            <label for="bonus">Bonus</label>
+            <input type="number" name="myBonus" id="bonus">
+        </div>
+        <br>
+        <div>
+            <label for="age">Are you 18+?</label>
+            <input type="checkbox" name="myAge" id="age" checked>
+        </div>
+        <br>
+        <div>
+            <label for="job">Do you having any Job?</label>
+            <input type="checkbox" name="myJobinfo" id="job">
+        </div>
+        <br>
+
+        <div>
+            Gender : <br>
+            <label for="male">Male</label>
+            <input type="radio" name="myGender" id="male">
+
+            <label for="female">Female</label>
+            <input type="radio" name="myGender" id="female">
+
+            <label for="other">Other</label>
+            <input type="radio" name="myGender" id="other">
+        </div>
+        <br>
+        <div>
+            <label for="textparagraph">Write your Thoughts</label>
+            <textarea name="myText" cols="90" rows="5" id="textparagraph"></textarea>
+        </div>
+        <br>
+        <div>
+            <!-- Click here to proceed : -->
+            <input type="submit" value="Submit Now">
+            <!-- Click here to reset : -->
+            <input type="reset" value="Reset Now">
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="swf">Swift</option>
+                <option value="bler">Bolero</option>
+                <option value="Nno" selected>Nano</option>
+                <option value="hnda">Honda</option>
+            </select>
+        </div>
+
+
+    </form>
+</body>
+
+</html>

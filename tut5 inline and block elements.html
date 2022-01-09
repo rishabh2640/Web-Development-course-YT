@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Block elements</title>
+</head>
+
+<body style="background-color: rgb(108, 6, 190);">
+
+    <!-- use <span></span> for inline paragraphs and for block border element we use <span style="border: 2px solid red;"></span> or <p style="border: 2px solid red;"></p>  -->
+
+    <p style="border: 2px solid blue;">This is an paragraph</p>
+    <p style="border: 2px solid red;"> This is an also paragraph</p>
+    <span style="border: 2px solid red;">This is span.</span>
+    <span style="border: 2px solid blue;">This is also span</span>
+
+    <strong style="border: 2px solid blue;">This is an paragraph</strong>
+    <a style="border: 2px solid red;"> This is A Tag</a>
+
+    <!-- check the difference b/w both borders in <p></p> and <span></span>  
+    "strong" and "a" tag is also inline element and "span" too. And "p" tag is not an inline element -->
+
+
+
+
+    <ul style="border: solid red;">
+        <li style="border: 2px solid blue;">This is first line</li>
+        <ol>
+            <li style="border: 2px solid red;"> listed lines</li>
+            <li style="border: 2px solid red;"> listed lines second</li>
+        </ol>
+        <li style="border: 2px solid blue;">new line again</li>
+        <li style="border: 2px solid blue;">new again</li>
+    </ul>
+
+    <!-- hence "ul","ol" and "li" tags are not inline element  -->
+
+    <h3>Html table with block elements</h3>
+    <table style="border: 3px solid rgb(108, 6, 190);">
+        <thead>
+            <tr>
+                <th style="border: 2px solid red;">Fist column</th>
+                <th style="border: 2px solid red;">second column</th>
+                <th style="border: 2px solid red;">third column</th>
+            </tr>
+
+        </thead>
+        <tbody">
+            <tr>
+                <td style="border: 2px solid rgb(91, 192, 32);">first</td>
+                <td style="border: 2px solid rgb(91, 192, 32);">second</td>
+                <td style="border: 2px solid rgb(91, 192, 32);">third</td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid rgb(91, 192, 32);">first</td>
+                <td style="border: 2px solid rgb(91, 192, 32);">second</td>
+                <td style="border: 2px solid rgb(91, 192, 32);">third</td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid rgb(91, 192, 32);">first</td>
+                <td style="border: 2px solid rgb(91, 192, 32);">second</td>
+                <td style="border: 2px solid rgb(91, 192, 32);">third</td>
+            </tr>
+            </tbody>
+    </table>
+ <!-- Hence table tag is inline element  -->
+
+
+
+   <div>
+       <h5 style="border: 2px solid red;"> this is an heading no. 5</h5>
+   </div>
+<!-- "div" tag is not inline element  -->
+
+
+
+<p> Lorem ipsum dolor sit amet consectetur <em style="border: 2px solid blue;">This is emphaised,</em>adipisicing elit. <strong style="border:2px solid red;">This is strong tag.</strong>Veritatis magni eaque ducimus velit libero deleniti error a labore ad beatae possimus maiores recusandae natus cum, dignissimos est quas nulla debitis.</p>
+<!-- hence "strong and em" tag are also an inline element  -->
+
+
+
+<div>
+    This is my photo <br>
+    <img style="border: 8px solid rgb(211, 82, 7);" src="Rishabh1.jpg" alt="My image was there." height="500">
+</div>
+<!-- Hence "img" tag is also an inline element  -->
+
+</body>
+
+</html>
