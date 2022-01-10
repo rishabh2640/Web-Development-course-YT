@@ -6,12 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Saira Condensed', sans-serif;
+        }
+
         .container {
             width: 600px;
-            border: 3px solid black;
+            border: 3px solid rgb(209, 119, 119);
             margin: 35px auto;
             /* margin: horizontal(px) vertical(auto)centered; */
+            background-color: rgb(238, 183, 163);
         }
 
         .item {
@@ -21,31 +33,71 @@
             background: rgb(241, 217, 217);
         }
 
-        .fruit {}
+        #fruit {
+            float: left;
+            width: 48%;
+        }
 
-        .Vege {}
+        #Vege {
+            float: right;
+            width: 48%;
 
-        .Nut {}
+        }
+
+        #Nut {
+            /* float: left; */
+            /* clear:right; */
+            /* clear: left; */
+            clear: both;
+            /* clear is the opposite of float  */
+            width: 100%;
+
+        }
+
+        p,
+        h3 {
+            /* text-align: right; */
+            /* text-align: left; */
+            /* text-align: center; */
+            text-align: justify;
+        }
+
+        h1 {
+            margin: auto;
+            width: 274px;
+            /* margin: auto; is used for making element on center, and it is only use when width is defined  */
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
+        <h1>Welcone to my Website.</h1>
         <div id="fruit" class="item">
             <h3>Fruits</h3>
             <p id="fruitspara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni unde saepe
                 cum consectetur, magnam recusandae eius voluptatibus odio. Sed sequi delectus, quisquam dolores rerum
-                corporis porro et nostrum ipsum esse.</p>
+                corporis porro et nostrum ipsum esse. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
+                quidem, eveniet nam rerum quae perspiciatis quaerat fugit corporis consectetur enim iure praesentium
+                reiciendis in asperiores. Amet provident aut quas minima.</p>
         </div>
         <div id="Vege" class="item">
             <h3>Vegetables</h3>
             <p id="vegiespara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni unde saepe
                 cum consectetur, magnam recusandae eius voluptatibus odio. Sed sequi delectus, quisquam dolores rerum
-                corporis porro et nostrum ipsum esse.</p>
+                corporis porro et nostrum ipsum esse. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam,
+                pariatur illo esse iure id minus in autem accusantium. Ad voluptas corporis suscipit, minima possimus
+                numquam labore at, repellat eos non ut pariatur illum amet.</p>
         </div>
         <div id="Nut" class="item">
             <h3>Nuts</h3>
             <p id="nuttspara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni unde saepe
+                cum consectetur, magnam recusandae eius voluptatibus odio. Sed sequi delectus, quisquam dolores rerum
+                corporis porro et nostrum ipsum esse.</p>
+        </div>
+        <div id="Utensile" class="item">
+            <h3>Utensiles</h3>
+            <p id="utensilspara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni unde saepe
                 cum consectetur, magnam recusandae eius voluptatibus odio. Sed sequi delectus, quisquam dolores rerum
                 corporis porro et nostrum ipsum esse.</p>
         </div>

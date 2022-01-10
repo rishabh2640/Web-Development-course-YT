@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors & more designing</title>
+    <style>
+        /* {
+            box-sizing: border-box;
+        }  */
+        .container {
+            border: 3px solid blueviolet;
+            padding: 35px;
+            margin: 35px;
+            width: 600px;
+            background-color: rgb(229, 209, 248);
+            border-radius: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .btn {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            border: none;
+            background-color: blueviolet;
+            color: black;
+            font-size: 15px;
+            border-radius: 5px;
+            cursor: pointer; /* thsi is for pointing coursor while hovering in it*/
+        }
+
+        a {
+            text-decoration: none;
+            padding: 1px 4px 2px 4px;
+        }
+
+        /* these a:hover, a:visited and a:active are Pseudo selectors  */
+
+        a:hover {
+            color: white;
+            background-color: rgb(64, 43, 132);
+            border: 2px solid rgb(110, 77, 220);
+        }
+
+        a:visited {
+            color: red;
+            background-color: rgb(245, 188, 188);
+            border: 2px solid rgb(247, 50, 50);
+        }
+
+        a:active {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .btn:hover {
+            color: rgb(255, 255, 255);
+            background-color: rgb(43, 132, 61);
+            border: 2px solid rgba(77, 220, 82, 0.537);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h2>This is my heading</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, harum? Nesciunt sed doloribus ducimus
+            blanditiis recusandae praesentium, fuga eius minus neque commodi at. Quod ea, veniam delectus vero et
+            tenetur Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam modi dicta deserunt sint, ullam
+            fugit totam illo magnam similique dolore accusantium. Rerum, culpa tenetur magnam quis ullam rem distinctio
+            beatae fuga officia et ipsam?
+        </p>
+        <a href="https://facebook.com" class="btn sz" target="_blank">Read more</a>
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+
+</html>
