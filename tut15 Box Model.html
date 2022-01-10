@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* universal selector for all  */
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-image: url('waterDrop.jpg');
+            background-repeat: no-repeat;
+            background-position:30% 80% ;
+            /* background-position: horizontal% vertical% ; background-position: horizontal(px) vertical(px) */
+
+        }
+
+        h1 {
+            margin: 13px 35px;
+            padding: 30px 20px;
+            width: 707px;
+            font-size: 38px;
+            color: rgb(255, 255, 255);
+        }
+
+        .container {
+            background-color: rgb(80, 172, 212);
+            border: 3px solid rgb(56, 124, 160);
+            /* padding: top right bottom left; */
+            /* padding: 20px 0px 20px 15px;  */
+
+            /* margin: top right bottom left; */
+            /* margin: 20px 0px 20px 15px;  */
+
+            /* padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 15px;  
+            we can also right like this.*/
+
+            /* all same for margin also  */
+
+            /* margin-top: 35px;
+            margin-left: 45px;
+            margin-right: 20px;
+            margin-bottom: 60px; */
+
+            /* margin: y(top/bottom) x(left/right);  */
+
+            /* padding: y(top/bottom) x(left/right);  */
+            margin: 7px 43px;
+            padding: 31px 43px;
+            border-radius: 20px;
+            width: 680px;
+            }
+
+            .whitePrim{
+                color: rgb(227, 236, 255);
+            }
+
+    </style>
+</head>
+
+<body>
+    <h1>Box model, margin and padding</h2>
+        <div class="container">
+            <h2 class="whitePrim">This is my Heading.</h2>
+            <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur pariatur quis atque ut
+                vel!
+                Veniam earum placeat in iure nesciunt dolores vero vitae esse animi nam, itaque labore doloribus
+                possimus.
+            </p>
+        </div>
+        <div class="container">
+            <h2 class="whitePrim">This is my Heading.</h2>
+            <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur pariatur quis atque ut
+                vel!
+                Veniam earum placeat in iure nesciunt dolores vero vitae esse animi nam, itaque labore doloribus
+                possimus.
+            </p>
+        </div>
+        <div class="container">
+            <h2 class="whitePrim">This is my Heading.</h2>
+            <p id="third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur pariatur quis atque ut
+                vel!
+                Veniam earum placeat in iure nesciunt dolores vero vitae esse animi nam, itaque labore doloribus
+                possimus.
+            </p>
+        </div>
+</body>
+
+</html>
