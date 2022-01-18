@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            /* initialized the container as a flex box  */
+            display: flex;
+            height: 350px;
+            width: 100%;
+            border: 2px solid black;
+
+            /* flex properties for flex container  */
+            flex-direction: row;
+            /* by default */
+            /* flex-direction: column;  */
+            /* flex-direction: column-reverse;  */
+            /* flex-direction: row-reverse;  */
+
+            /* flex-wrap: nowrap;  (by default)
+            flex-wrap: wrap-reverse;*/
+            /* flex-wrap: wrap; */
+
+            /* flex-flow: row-reverse wrap; */
+
+            justify-content: center;
+            /* justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly; */
+
+            /* align-items: flex-start;
+            align-items: flex-end; 
+            align-items: center;*/
+            align-items: stretch;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        #item-1 {
+            /* flex properties for flex items */
+            /* order will decide the box position, maximum will always goes to the end  */
+            order: 21;
+            /* higher the flex-grow , faster the box grow than lower ones if they find empty space . (note: negative numbers are invalid, instead of negative value, we use flow-shrink property)*/
+            /* flex-grow: 2;
+            flex-shrink: 2; */
+
+        }
+
+        #item-2 {
+            order: 1;
+            /* flex-grow: 3;
+            flex-shrink: 3; */
+
+            /* when flex-direction is set to row, flex-basis will control width  */
+            /* when flex-direction is set to column, flex-basis will control height  */
+            flex-basis: 220px;
+        }
+
+        #item-3 {
+            order: 2;
+            /* flex: flex-grow || flex-shrink || flex-basis */
+            height: 200px;
+            flex: 2 2 320px;
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h3>What is a flexbox?</h3>
+    </div>
+
+    <div>
+        <ul>
+            <li>Flexbox is a one-dimensional layout method for laying out items in rows or columns. </li>
+            <li>CSS flex box is a better way to align items into a container.</li>
+            <li>Flexbox = flexible + box.</li>
+        </ul>
+    </div>
+    <h3>This is Flexbox</h3>
+    <div class="container">
+        <div class="item" id="item-1">first box</div>
+        <div class="item" id="item-2">second box</div>
+        <div class="item" id="item-3">third box</div>
+        <!-- <div class="item" id="item-4">fourth box</div>
+        <div class="item" id="item-5">fifth box</div>
+        <div class="item" id="item-6">sixth box</div> -->
+    </div>
+</body>
+
+</html>

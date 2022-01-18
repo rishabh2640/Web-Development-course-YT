@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size units</title>
+    <style>
+        html {
+            font-size: 25px;
+        }
+
+        .container {
+            text-align: center;
+            font-size: 10px;
+            border: 2px solid red;
+            /* that means .container content will take now full viewport width and height  */
+            /* width: 100vw;
+            height: 100vh; */
+            width: 100vw;
+            height: 25vh;
+            /* in the case of width, % can do our work, but in case of height, we generally use vh parameter and that helps a lot  */
+        }
+
+        ul>li {
+            text-align: center;
+        }
+
+        li {
+            list-style: none;
+            /* 2em parameter depends upon its parent, the no. of pixels parent had, is multiplied by 2em it will got.  */
+            /* font-size: 2em; */
+        }
+
+        h3 {
+            /* text-align: center;
+            font-size: 2em; */
+        }
+
+        #first1 {
+            /* always font size relative to the html font size that is in this case 2rem*25px of html font size = 50px  */
+            /* font-size: 2rem; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>WHAT IS A RESPONSIVE DESIGN?</h3>
+        <ul>
+            <li id="first">Endless new resolutions and devices are difficult to support separately for a web developer.
+            </li>
+            <li id="second">Responsive desing is a way for a web developer to make his website adapt to all the devices
+                and resolutions</li>
+            <li id="third">Responsive desing is a necessity and not a luxury anymore!</li>
+        </ul>
+    </div>
+    <br>
+    <div class="container">
+        <h3>VARIOUS WAYS TO ACHIEVE RESPONSIVE DESIGN</h3>
+        <ul>
+            <li>Setting up the viewport</li>
+            <li>Use max-width/max-height</li>
+            <li>Using CSS Media Queries</li>
+            <li>Using rem/vh/vw units over pixels</li>
+        </ul>
+    </div>
+<br>
+    <div class="container">
+        <h3 id="first1">This is first heading</h3>
+        <h3 id="second2">This is second heading</h3>
+        <h3 id="third3">This is third heading</h3>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+body {
+    /* Css Reset  */
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    height: 1000px;
+    /* background-image: url('img/bg.jpg'); */
+}
+
+div img {
+    position: fixed;
+}
+
+.left {
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 23px;
+    left: 60px;
+}
+
+.left img {
+    width: 130px;
+    position: static;
+    margin: -30px auto;
+    filter: invert(50%);
+}
+
+.left div {
+    position: absolute;
+    padding-left: 8.899999999999999px;
+    text-align: center;
+    line-height: 0;
+    font-size: 18px;
+}
+
+.mid {
+    /* border: 2px solid yellow; */
+    position: absolute;
+    top: -21px;
+    right: 503px;
+    margin: 45px auto;
+    width: 36%;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.mid a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.mid ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.mid li a:hover,
+.mid li a.active {
+    color: grey;
+    text-decoration: underline;
+    transition-duration: 0.5s;
+}
+
+.right {
+    display: inline-block;
+    /* border: 2px solid blue; */
+    position: absolute;
+    top: 44px;
+    right: 20px;
+}
+
+.btn {
+    margin: 0px 13px;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 17px;
+    color: white;
+    padding: 0px 9px;
+    cursor: pointer;
+    font-family: 'Baloo Bhai 2', cursive;
+    transition-duration: 0.5s ;
+
+}
+
+.btn:hover {
+    background-color: rgb(57, 57, 57);
+}
+
+.container {
+    border: 4px solid white;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 30px 2px;
+    position: fixed;
+    top: 247px;
+    right: 63px;
+    width: 29%;
+    height: 42%;
+}
+
+.form-group {
+    display: block;
+    font-size: 24px;
+    width: 318px;
+    height: 26px;
+    margin: 10px auto;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 3px 2px;
+
+}
+
+div form .headf {
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.sub {
+    margin: 20px auto;
+    width: 318px;
+    padding: 15px 0px;
+    line-height: 0px;
+    font-size: 28px;
+}

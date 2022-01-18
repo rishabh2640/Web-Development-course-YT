@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <style>
+.box{
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    margin: 2px;
+}
+#box1{
+    position: relative;
+    top: 48px;
+    z-index: 32;
+     background-color: red;
+     
+     /* in the overlap condition, if element has greater z-index value then, it will overlap the elements those are having low z-index values  */
+     /* stacking will depent upon z-index values  */
+    }
+
+#box2{
+    position: relative;
+    top: 50px;
+    z-index: 31;
+    /* just disappeared form main page  */
+    /* display: none; */
+    /*(it shows the remaining space after disapear) */
+    /* visibility: hidden; */
+
+    /* z-index only work with non static( position:relative, absolute, fixed, sticky ) elements */
+     background-color: blue;
+    }
+#box3{ background-color: green;}
+#box4{ background-color: yellow;}
+    </style>
+</head>
+<body>
+    <!-- .box#box$*4  -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
