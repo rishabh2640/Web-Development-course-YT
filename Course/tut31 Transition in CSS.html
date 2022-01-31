@@ -4,12 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transition in CSS</title>
-    <style>
-        
-    </style>
+    <title>CSS Transition</title>
 </head>
+<style>
+    /* html{
+         font-size: 16px; 
+    } */
+    h1 {
+        text-align: center;
+    }
+    .container{
+     display: flex;
+     justify-content: center;
+        
+    }
+    #box{
+        display: flex;
+        background-color: blueviolet;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+        height: 10rem;
+       /* transition-property: background-color;
+         transition-duration: 1s;
+        transition-timing-function: ease;
+        transition-delay: .5s; */
+
+        /* SHORT HAND FOR TRANSITION  */
+        /* transition: transition-proper transition-duration transition-timing-function transition-delay; */
+        /* transition: background-color 1s ease 0s; */
+        transition: all 1s ease 0s;
+    }
+    #box:hover{
+        background-color: violet;
+        cursor: pointer;
+        height: 12rem;
+        width: 22rem;
+        border-radius: 2rem;
+        font-size: 1.5rem;
+    }
+</style>
 <body>
-    
+    <h1>This is our Heading</h1>
+    <div class="container">
+        <div id="box">
+            This is our content.
+        </div>
+    </div>
 </body>
 </html>
