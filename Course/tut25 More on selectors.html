@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        /* div p{
+         div p{} means that style will be applied on every p elements , those are inside div element 
+        background-color: black;
+        color: white;
+        }*/
+
+        div li p {
+            /* div li p{} means that style will be applied on every p elements , those are inside div element then li element  */
+            background-color: rgb(255, 0, 0);
+            color: white;
+        }
+
+        /* div > p{
+            only affect if p element is child to div element
+            background-color: blueviolet;
+        } */
+
+        div + p {
+            /* only p elements will be affected whose sibling is div element */
+            /* id p is right afer div i.e. if p is next sibling to div.  */
+            /* sibling means before used element, here p is a sibling to div element  */
+            background-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>More on Selectors</h3>
+        <div class="row">
+            <ul>
+                <li>
+                    <p>This is paragraph inside line.</p>
+                </li>
+                <li>This will not get affected</li>
+                <p>This is p element child to ul tag.</p>
+            </ul>
+            <p>This is a paragraph inside internal div.</p>
+        </div>
+        <p>this is container's paragraph.</p>
+    </div>
+    <p>This is outmost paragraph.</p>
+</body>
+
+</html>

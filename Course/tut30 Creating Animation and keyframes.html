@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation/Keyframes</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    html {
+
+        font-size: 16px;
+    }
+
+    .container {
+        background-color: rgb(199, 199, 199);
+        border-radius: 2rem;
+        width: 40rem;
+        height: 30rem;
+    }
+
+    .box {
+        background-color: grey;
+        color: white;
+        text-align: center;
+        width: 20rem;
+        height: 10rem;
+        position: relative;
+        border-radius: 2rem;
+        /* animation-name: box1; */
+        animation-name: box2;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        /* to end the animation in last animation-fill-mode: forward; , to end the animation in start animation-fill- mode: alternate;   */
+        /* animation-fill-mode: forwards; */
+        /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.16, 1); */
+        animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        /* wait before animation starts
+         animation-delay: 3s; */
+        /* animation-direction: alternate; */
+
+        /* (   SHORT HAND FOR ANIMATION   ) */
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+
+        /* animation: box 5s ease-in-out 1s infinite backwards; */
+    }
+
+    @keyframes box2 {
+        0%{
+            top: 0rem;
+            left: 0rem;
+        }
+        25%{
+            top: 20rem;
+            left: 0rem;
+        }
+        50%{
+            top: 20rem;
+            left: 20rem;
+        }
+        75%{
+            top: 0rem;
+            left: 20rem;
+        }
+        100%{
+
+            top: 0rem;
+            left: 0rem;
+        }
+    }
+
+    @keyframes box1 {
+        form {
+            width: 0%;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a Box.
+        </div>
+    </div>
+</body>
+
+</html>

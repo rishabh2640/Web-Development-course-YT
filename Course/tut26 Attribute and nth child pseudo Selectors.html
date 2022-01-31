@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute & nth child pseudo Selectors</title>
+    <style>
+        .container{
+            display: block;
+            width: 500px;
+            margin: auto;
+        }
+        input{
+            display: block;
+        }
+        input[type='text']{
+            padding: 10px;
+            margin: 5px 0px;
+            color: rgb(100, 0, 206);
+            background-color: rgb(214, 181, 245);
+        }
+        a[target]{
+            color: red;
+        }
+        a[target='_self']{
+            color: blue;
+        }
+        input[type='email']{
+            color: red;
+            background-color: rgb(240, 188, 188);
+            text-align: center;
+            font-size: 20px;
+        }
+
+        /* style the 3rd li element  */
+        /* li:nth-child(3){
+            color: cyan;
+            background-color: red;
+        } */
+
+        /* affect even li elements with the help of formula (2n+0) where n is a no. that is multiplied in increasing order  */
+        /* li:nth-child(2n+0){
+            background-color: black;
+            color: grey;
+        } */
+        li:nth-child(3n+3){
+            background-color: tomato;
+            color: white;
+        }
+
+        /* style the odd ones in the list of li elements only  */
+        /* li:nth-child(odd){
+            color: yellow;
+            background-color: yellowgreen;
+        } */
+
+        /* style the even ones in the list of li elements only  */
+        /* li:nth-child(even){
+            color: rgb(0, 13, 255);
+            background-color: rgb(50, 205, 117);
+        } */
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- a:link  -->
+    <div class="container">
+        <h3><a href="http://google.com" target="_blank">Go to Google</a></h3>
+        <h3><a href="http://facebook.com" target="_self">Go to Facebook</a></h3>
+        <form action="noaction.php">
+            <input type="text" class="form-control" placeholder="Enter your Name">
+            <input type="password" class="form-control" placeholder="Enter your Password">
+            <input type="email" class="form-control" placeholder="Enter your Email">
+            <!-- input:submit  -->
+            <input type="submit" value="Submit">
+        </form>
+        <ul class="row">
+            <li class="item" id="item-1">item 1</li>
+            <li class="item" id="item-2">item 2</li>
+            <li class="item" id="item-3">item 3</li>
+            <li class="item" id="item-4">item 4</li>
+            <li class="item" id="item-5">item 5</li>
+            <li class="item" id="item-6">item 6</li>
+            <li class="item" id="item-7">item 7</li>
+            <li class="item" id="item-8">item 8</li>
+            <li class="item" id="item-9">item 9</li>
+            <li class="item" id="item-10">item 10</li>
+        </ul>
+    </div>
+</body>
+</html>

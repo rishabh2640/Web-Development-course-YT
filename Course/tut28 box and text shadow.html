@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid blueviolet; */
+            background-color: rgb(235, 214, 255);
+
+            /* box-shadow: offset-x offsety-y color;
+            box-shadow: -10px -10px violet; */
+
+            /* box-shadow: offset-x offsety-y blur-radius color;
+            box-shadow: -10px -10px 20px violet; */
+
+            /* box-shadow: offset-x offsety-y blur-radius spread-radius color; 
+            box-shadow: -10px -10px 1500px 2px violet; */
+
+            /* rgba = red green blue alpha(for brightness)
+            box-shadow: -10px -10px 1500px 2px rgba(240, 148, 240, 0.8);  */
+
+            /* FOR SHADOW INSIDE A BOX */
+
+            /* box-shadow: inset offset-x offsety-y blur-radius spread-radius color; 
+            box-shadow: inset 10px 10px 5px 1px violet ; */
+
+            /* WE CAN ALSO APPLY MULTIPLE SHADOWS WITH DIFFERENT COLORS by using commas */
+            box-shadow: 10px 10px 5px violet,
+                -10px -10px 5px violet,
+                -15px -15px 5px rgb(130, 148, 238),
+                15px 15px 5px rgb(130, 148, 238);
+        }
+
+        .card h2{
+            /* SAME PROPERTIES THAT FOLLOWS BOX-SHADOW */
+            /* text-shadow: 2px 1px violet; */
+            /* text-shadow: offset-x offset-y blur color; */
+            text-shadow: -2px -2px 2px violet;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2> The C++ Course</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id pariatur ipsam consectetur eos omnis quas,
+            obcaecati at sed qui alias suscipit possimus quia dolore asperiores reprehenderit? Sint quidem rerum quis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis optio dolor praesentium architecto saepe,
+            harum libero assumenda cum inventore esse iste sed reiciendis?
+        </div>
+        <div class="card" id="card-2">
+            <h2> The HTML Course</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id pariatur ipsam consectetur eos omnis quas,
+            obcaecati at sed qui alias suscipit possimus quia dolore asperiores reprehenderit? Sint quidem rerum quis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis optio dolor praesentium architecto saepe,
+            harum libero assumenda cum inventore esse iste sed reiciendis?
+        </div>
+        <div class="card" id="card-3">
+            <h2> Card3</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id pariatur ipsam consectetur eos omnis quas,
+            obcaecati at sed qui alias suscipit possimus quia dolore asperiores reprehenderit? Sint quidem rerum quis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis optio dolor praesentium architecto saepe,
+            harum libero assumenda cum inventore esse iste sed reiciendis?
+        </div>
+    </div>
+</body>
+
+</html>
