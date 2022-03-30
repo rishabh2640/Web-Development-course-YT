@@ -1,0 +1,95 @@
+/* Navigation  */
+
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul{
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+#logo img {
+    height: 60px;
+}
+
+/* Home section  */
+
+#home{
+    padding: 10px 50px;
+}
+
+#home h1{
+    font-size: 2.5rem;
+}
+
+#home p{
+    font-size: 1.2rem;
+}
+#home::before{
+    height: 860px;
+}
+
+.btn{
+    margin-top: 10px;
+    transform: scale(0.6);
+}
+
+/* Planets Section  */
+
+#planets{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#planets .box{
+    width: 80%;
+    padding: 50px;
+    margin: 30px;
+}
+
+#planets .box img{
+    display: block;
+    margin: auto;
+    width: auto;
+    height: 150px;
+    /* padding: 0px 40px; */
+}
+#planets .box p{
+    font-size: 1.3rem;
+}
+
+#planets .box h2{
+    font-size: 2rem;
+}
+.planet-container > h1{
+    font-size: 4rem;
+    top: 25px;
+}
+
+/* Clients section  */
+#clients img{
+    height: 120px;
+}
+
+#client-section h1{
+    font-size: 2.5rem;
+}
+/* Contact us section  */
+
+#contact h1{
+    font-size: 2.5rem;
+}
+
+#contact-box form{
+    width: 80%;
+}
+
+/* Footer  */
+
+footer{
+    font-size: 0.7rem;
+}
+
