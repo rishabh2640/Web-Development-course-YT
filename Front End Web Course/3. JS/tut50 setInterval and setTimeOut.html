@@ -1,19 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>setInterval and setTimeOut | JS</title>
+    <title>setInterval, setTimeOut and clearTimeOut | JS</title>
 </head>
+
 <body>
     <div class="container">
-        This is a Container
+        Time is Now <span id="time"></span>
     </div>
 
     <script>
         console.log('This is tutorial 50');
+
+        // setTimeOut -> Allows us to run the function once after the interval of the time
+        // clearTimeout -> Allows us to run the function repeatedly after the interval of the time
+
+        // const greet = () => console.log('Hello good morning');
+        // OR 
+        function greet(name, byeText) {
+            console.log('Hello good morning. ' + name + ' ' + byeText);
+        };
+
+        // setTimeout(() => {
+        //     greet('Rishabh', 'Good Morning');
+        // }, 2000);
+
+
+        // timeOut = setTimeout(greet, 2000+2000 , 'Rishabh' , 'Take Care');
+        // console.log(timeOut);
+
+        // clearTimeout(timeOut);
+
+        // setTimeout(greet(), 1000); --> Wrong as it is calling the function inside setTimeout. Means we can't call function inside setTimeout 
+
+        // for giving the output only one time 
+
+        // intervalId = setInterval(() => {
+        //     greet('Rahul', 'Hi There');
+        //     console.log(intervalId);
+        // }, 1000);
+        // setTimeout(() => {
+        //     clearInterval(intervalId);    
+        // }, 1000);
+
+
+        // intervalId = setInterval(greet, 1000 , 'Rahul', 'Hi there');
+        // console.log(intervalId);
+
+        // APPLICATION OF TIME DISPLAY 
         
+        function displayTime() {
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+
+        timeDisplay = setInterval(displayTime, 1000);
+        // setTimeout(() => {
+        //     clearInterval(timeDisplay)
+        // }, 10000);
+
     </script>
 </body>
+
 </html>
