@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in JS</title>
+    
+</head>
+<body>
+    <h1>LOREM</h1>
+    <div id="content"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde ut eos, veritatis alias quam officiis optio maiores, minus quasi, nemo culpa necessitatibus voluptatem nihil ratione quo! Nisi, delectus odio.</p>
+</body>
+<script>
+
+    // About Strings 
+    var string = "this ";
+    var name = "Rishabh";
+    var message = " How is you doing. ";
+    var temp = `${name} is a nice 'persion' and he has a "good" temper`;
+    // console.log( string + name + message + temp);
+    // var len = name.length;
+    // console.log(`Lenght of name is ${len}`);
+
+    // Escape sequence character and more
+    console.log("Hello World\nHey there.\tand\b");
+
+    //method of making a string constructor
+    let y = new String("Rishabh");
+    console.log( y );
+    console.log( y[0] + y[1] );
+
+    document.getElementById('content').innerHTML = '<h2>This is Heading Created by JS</h2>'
+</script>
+
+</html>

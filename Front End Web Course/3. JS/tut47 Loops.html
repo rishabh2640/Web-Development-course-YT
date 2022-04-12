@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for,while,foreach,do while loop</title>
+</head>
+
+<body>
+    <div class="container">This is Item</div>
+    <script>
+        console.log("This is Tutorial 47");
+
+
+        // for loop
+
+        // let i=0;
+        // for(i=0; i<=3; i++) {
+        //     console.log(i);
+        // }
+
+        // let friends = ["Rohan", "Sanjeev", "Deepika", "Muskan", "Ramesh", "Sahil"];
+
+        // for (let index = 0; index < friends.length; index++) {
+        //     const element = friends[index];
+        //     let friNo = index;
+        //     console.log("Hello my friend no. "+ index + " " + element);
+        // }
+
+
+        // forEach loop
+
+        // friends.forEach(function myFunction(element) {
+        //     console.log("Hello Friend, " + element);
+        // });
+
+
+        // friends.forEach(myFunction);
+
+        // function myFunction(element) {
+        //     console.log("Hello friend, " + element);
+        // }
+
+
+        // for Of loop
+
+        // for (element of friends){
+        //     console.log("Hello friend, " + element + " with a modern Javascript again");
+        // }
+
+
+        // Use this loop to Iterate over objects in JavaScript
+
+        let employee = {
+            name: "Rishabh",
+            salary: 2,
+            channel: "withCHannelFirst"
+        }
+
+        // for in loop 
+
+        for (key in employee) {
+            console.log(`The ${key} of the employee is ${employee[key]}`)
+        }
+
+        // while loop in JS
+        
+        let i = 0;
+        while(i<4){
+            console.log(`${i} is less than 4`)
+            i++;
+        }
+        
+        // do while loop in JS
+
+        do{
+            i--;
+            console.log(`${i} is greater than 0`);
+            if(i==2){
+                break;
+            }
+        }while(i>0);
+
+        
+    </script>
+</body>
+
+</html>

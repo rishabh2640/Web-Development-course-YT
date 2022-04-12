@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions in JS</title>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <script>
+        var str = "This is a string string";
+        console.log(str);
+        
+        // First occurrence of a substring
+        var position =  str.indexOf('is');
+        console.log(position);
+
+        // Last occurrence of a substring
+        position =  str.lastIndexOf('is');
+        console.log(position);
+
+        // Substring from a string 
+        // var substr = str.slice(1,7); Can include negative terms
+        // var substr = str.substring(1,7); can't include negative terms
+        var substr = str.substr(2,8); // 2 is Starting point and 8 is ending point
+        console.log(substr);
+
+        // Replace function
+        var replace = str.replace('string','Rishabh');
+        console.log(str);
+        console.log(replace);
+
+        console.log();
+
+        // console.log(str.toUpperCase());
+        // console.log(str.toLowerCase());
+        var newString = str.concat(' New String');
+        console.log(newString);
+
+        // trim() function, trims the starting and ending spaces
+        var strWhiteSpaces = "     this    contains            whitespaces               "
+        console.log(strWhiteSpaces);
+        console.log(strWhiteSpaces.trim());
+
+        // locate the string character and to find the UTF-16 character Code 
+        //var char5 = str.charCodeAt(5);  // not very important
+        var char5 = str.charAt(5);
+        console.log(char5);
+
+        console.log(str[6]);
+    </script>
+
+</body>
+</html>

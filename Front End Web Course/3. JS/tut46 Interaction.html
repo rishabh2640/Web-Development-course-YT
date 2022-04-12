@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction | Alert,Prompt, Confirm</title>
+</head>
+<style>
+    div {
+        font-size: 3rem;
+    }
+</style>
+
+<body>
+    <div class="container">This is a Page.</div>
+    <div id="root"></div>
+
+    <script>
+        // ALERT in IN-Browser JS - does not return anything
+
+        // let a = alert("This is a message");
+        // console.log(a);
+
+        //PROMPT in JS
+
+        let userAge = prompt("What is your Age?", " ");
+        console.log("Your age is " + userAge);
+
+        if(userAge >= 18){
+            document.getElementById('root').innerHTML="<h2>You're allowed to visit this website</h2>"
+            console.log("You're allowed to visit this website");
+            alert("Welcome, You're in");
+        }else{
+            console.log("You're not allowed to visit this website");
+            document.getElementById('root').innerHTML="<h2>You're not allowed to visit this website</h2>"
+            alert("Sorry You can't excess our website");
+        }
+
+        // CONFIRM in JS
+        // let deletePost = confirm("Are you sure to delete this post?");
+        // // console.log(deletePost);
+
+        // if(deletePost){
+        //     console.log("Your post has been deleted");
+        //     document.getElementById('root').innerHTML="<h2>Your post has been deleted</h2>"
+        // }else{
+        //     console.log("Your post has not been deleted");
+        //     document.getElementById('root').innerHTML="<h2>Your post has not been deleted</h2>"
+        // }
+    </script>
+
+</body>
+
+</html>

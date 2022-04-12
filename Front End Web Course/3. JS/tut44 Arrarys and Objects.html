@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects in JS</title>
+</head>
+<body>
+    <div class="container">JS programming language</div>
+    <script>
+        let myVal = 44;
+        let myVal1 = "String";
+        let myVal2 = null;
+        let myVal3 = undefined;
+        let myVal4 = true;
+
+        //Object in JS 
+
+        let employee = { 
+            name: "Rishabh", // name is a KEY and Rishabh is a VALUE
+            salary: 10,
+            channel: "withCHannelFirst",
+            "channel 2": "WithChannel2"
+        } // Use  employee.name or employee['name'] both gives same output and if the Key has <space> in it then must use employee['channel 2']
+        console.log(employee);
+
+        //Array in JS [in a Object form]
+
+        // let names = [2,4,5,"Rishabh",undefined,null,undefined];
+        // names[4] = "Hi";
+        // console.log(names);
+        // console.log(names[3]);
+
+        // "new" keyword is used to a make a Object
+
+        // let home = new Array(42,4,65,"Rishabh",undefined,null,undefined);
+        // home = home.sort();
+        // home.pop();
+        // home.push("this is pushed");
+        // console.log(home);
+        // console.log(home.length);
+
+        //both with new keyword or without new keyword, will give a same output, therefore there is 2 ways to defined arrays in JS
+
+        let car = new Array(15);  //creates 23 empty Array that is undefined by default
+        console.log(car);
+
+
+    </script>
+</body>
+</html>

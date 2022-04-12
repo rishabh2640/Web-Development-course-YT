@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid | Template Area</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            ' navbar navbar navbar navbar '
+            ' section section section aside '
+            ' footer footer footer footer ' ;
+            grid-gap: .5rem;
+        }
+        .items{
+            background-color: tomato;
+            border: 2px solid black;
+            color: black;
+            padding: 1rem;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="items">
+            Home About Contact us
+        </div>
+        <div id="section" class="items">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor suscipit aspernatur sit quos, totam repellendus facere quas accusantium nihil ut vel temporibus eligendi?
+        </div>
+        <div id="aside" class="items">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, facere voluptate. Ipsa necessitatibus provident placeat. Blanditiis dignissimos, laboriosam obcaecati non recusandae deserunt temporibus.
+        </div>
+
+        <footer class="items">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam quas voluptate ratione.</footer>
+        <!-- <div class="items">Item-1</div>
+        <div class="items">Item-2</div>
+        <div class="items">Item-3</div>
+        <div class="items">Item-4</div>
+        <div class="items">Item-5</div>
+        <div class="items">Item-6</div>
+        <div class="items">Item-7</div>
+        <div class="items">Item-8</div>
+        <div class="items">Item-9</div>
+        <div class="items">Item-10</div>
+        <div class="items">Item-11</div>
+        <div class="items">Item-12</div>
+        <div class="items">Item-13</div>
+        <div class="items">Item-14</div> -->
+    </div>
+</body>
+
+</html>

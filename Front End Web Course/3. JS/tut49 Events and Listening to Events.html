@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JS</title>
+    <style>
+        #btn {
+            display: block;
+            width: 40vw;
+            margin: 0 auto;
+            height: 4vh;
+            font-size: 1.2rem;
+            background-color: rgba(62, 178, 255, 0.373);
+            border-radius: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        h1,
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Browser Events:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    Form Events:
+    submit
+    focus
+
+    DOMcontentLoaded
+
+    CSS transition: 
+    transitionend -->
+
+    <div class="container">
+        <h1>This is Heading</h1>
+        <p Id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit sint recusandae id ipsum.
+            Temporibus doloribus doloremque, eum tempore accusamus nesciunt soluta ab pariatur voluptate atque debitis
+            omnis repellendus dicta, eius odio ullam libero. Aliquid magnam quis, rem sequi libero cum nemo. Tempore,
+            magnam repellendus. Id, animi nesciunt. Placeat qui necessitatibus corporis veniam quam, eveniet officiis
+            cupiditate vero incidunt aliquid fuga! Soluta odit ut, non recusandae minus libero, incidunt nihil
+            accusantium in cumque debitis ullam! Nostrum autem reprehenderit perspiciatis libero hic, possimus dolores
+            </p>
+    </div>
+    <button id="btn">Show/Hide</button> 
+    <!-- use [ onclick="toggleHide() ] as a Attribute in button tag, while using function instead of using addEventLisner -->
+
+    <script>
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para');
+
+        // btn.addEventListener('mouseover',function run(){
+        //     console.log('Mouse is over the Button');
+        // });
+        // btn.addEventListener('mouseout',function run(){
+        //     console.log('Mouse is outside the Button');
+        // });
+        btn.addEventListener('click', function run() {
+            let para = document.getElementById('para');
+            console.log('button is Clicked');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+                console.log('Para is hidden');
+            }
+            else {
+                para.style.display = 'block';
+                console.log('Para is showed');
+            }
+        });
+
+
+
+        // function toggleHide() {
+        //     let btn = document.getElementById('btn');
+        //     let para = document.getElementById('para');
+
+        //     if (para.style.display != 'none') {
+        //         para.style.display = 'none';
+        //     }
+        //     else {
+        //         para.style.display = 'block';
+
+        //     }
+        // }
+    </script>
+
+</body>
+
+</html>

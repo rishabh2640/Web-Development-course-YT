@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid | Media Queries</title>
+
+    <style>
+        @media only screen and (max-width:300px) {
+            body{   
+                background-color: red;
+            }
+            .container{
+            display: grid;
+            font-size: .8rem;
+            grid-template-areas: 
+            ' navbar navbar navbar navbar '
+            ' section section section section '
+            ' aside aside aside aside '
+            ' footer footer footer footer ' ;
+            grid-gap: .5rem;
+            text-align: center;
+        }
+        span{
+            text-align: center;
+            line-height: .1rem;
+            display: block;
+        }
+        }
+
+        @media screen and (min-width:300px) and (max-width:500px) {
+            body{   
+                background-color: violet;
+            }
+            .container{
+            display: grid;
+            grid-template-areas: 
+            ' navbar navbar navbar navbar '
+            ' section section section section '
+            ' aside aside aside aside '
+            ' footer footer footer footer ' ;
+            grid-gap: .5rem;
+            text-align: center;
+
+        }
+        
+        span{
+            text-align: center;
+            line-height: .5rem;
+            display: block;
+            padding: .1rem;
+        }
+
+        
+
+        }
+
+        @media only screen and (min-width:500px) and (max-width:800px) {
+            body{   
+                background-color: green;
+            }
+            .container{
+            display: grid;
+            grid-template-areas: 
+            ' navbar navbar navbar navbar '
+            ' section section section section '
+            ' aside aside aside aside '
+            ' footer footer footer footer ' ;
+            grid-gap: .5rem;
+        }
+        span{
+            text-align: center;
+            line-height: .5rem;
+            display: block;
+            padding: .5rem !important ;
+        }
+        }
+
+        @media only screen and (min-width:800px) {
+            body{   
+                background-color: blue;
+            }
+            .container{
+            display: grid;
+            grid-template-areas: 
+            ' navbar navbar navbar navbar '
+            ' section section section aside '
+            ' footer footer footer footer ' ;
+            grid-gap: .5rem;
+        }
+        
+        }
+
+        .bdr {
+            border: 2px solid black;
+            padding: 1rem;
+            background-color: aliceblue;
+            background-image: linear-gradient(to bottom right, rgb(218, 190, 255), rgb(255, 70, 70));
+        }
+
+        .bdr2 {
+            border: 2px solid black;
+            padding: 1rem;
+            background-color: aliceblue;
+        }
+
+        nav{
+            grid-area: navbar;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            font-size: .7rem ;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        h1{
+            padding: 1rem;
+        }
+        h2{
+            padding: 1rem;
+        }
+        p{
+            padding: .5rem  ;
+        }
+        span{
+            padding: .9rem  ;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container bdr2">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Contact</span>
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS lorem</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda praesentium laudantium ducimus dolor, tempore voluptas laborum, dolores recusandae, labore voluptates libero. Omnis sequi neque animi et culpa quas veniam ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fugit veniam vero nostrum iste facere soluta commodi quisquam eius mollitia! Blanditiis h odio quibusdam tenetur eaque, sit voluptatum. Quam eos quidem pariatur, inventore debitis veniam cumque nemo aspernatur corrupti quos, minus nisi blanditiis exercitationem voluptates minima libero nam modi, aut enim sequi! Consequatur, culpa nihil?</p>
+        </section>
+        <aside class="bdr">
+            <h1>More About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda voluptate provident pitia, soluta ex nihil. Dicta quas dolorum ratione obcaecati suscipit. Rem, non officiis.</p>
+        </aside>
+        <footer>Copyright &copy; All rights resevered</footer>
+    </div>
+</body>
+
+</html>

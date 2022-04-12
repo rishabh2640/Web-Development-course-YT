@@ -1,0 +1,19 @@
+// What can In-Browser Javascript do?
+Add new HTML and change existing HTML from DOM.
+React to user events [ event could be response from server, or any key press, or Mouse Movement]
+Ajax Requests [GET OR POST requests]
+Get & set cookies & use local storage
+
+
+//what can't do In-Browse Javascript
+Read/Write to & from computer Hard disk
+
+
+// what makes js unique
+HTML/ CSS support
+Simple things / Simple API [ fetch API etc.]
+Major Modern Browsers [Enabled by default]
+
+// JS Versions
+Maintained by Community
+ECMA [1st version 1997, 2nd 1998, 3rd 1999,  ECMA 2015,16,17,18... {their motive is to update JS and provide more feature} ]
